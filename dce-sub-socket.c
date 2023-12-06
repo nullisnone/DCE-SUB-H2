@@ -14,15 +14,16 @@
 #define BEST_QUOTE_MSG                  1
 #define DEPTH_UPDATE_MSG                2
 
-#ifdef __cplusplus
-extern "C" {
-#endif
+/* only this extern C statement when libpacket_handler_gcc.a or .so which are compiled by gcc */
+//#ifdef __cplusplus
+//extern "C" {
+//#endif
 
 int packet_handler_payload(char *input_data, char *output_data, int payload_size);
 
-#ifdef __cplusplus
-}
-#endif
+//#ifdef __cplusplus
+//}
+//#endif
 
 int main(int argc, char *argv[])
 {

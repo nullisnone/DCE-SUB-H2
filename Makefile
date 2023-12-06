@@ -2,7 +2,7 @@ CXX = g++
 
 INCLUDES = -I./ 
 CXXFLAGS = -O3 -Wall -DNDEBUG $(INCLUDES) 
-LDFLAGS = -lpacket_handler_gcc ./libpacket_handler_gcc.a -L./ 
+LDFLAGS = -lpacket_handler_gplus -L./ 
 
 TARGETS = dce-sub-socket
 
