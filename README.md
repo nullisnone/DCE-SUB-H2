@@ -47,10 +47,9 @@ sysctl -w net.ipv4.conf.ens1f1.rp_filter=0
 运行tcpdump -i ens1f1 -nnn
 如果能捕获到pyload长度为28或62字节的报文，表示组播报文接收配置成功。
 
-4）运行demo程序
-Socket 和 EXANIC版本： https://github.com/nullisnone/DCE-SUB
-EFVI版本：https://github.com/nullisnone/DCE-SUB-EFVI
-程序输出期货最新报价和5档最优报价表示运行成功。
+4）G++ 和 GCC
+如果你的编译器是G++, 请用libpacket_handler_gplus.a or .so 作为你的静态或动态库
+如果你的编译器是GCC, 请用libpacket_handler_gcc.a or .so 作为你的静态或动态库
 
 请注意：
 DCE-SUB-EFVI项目运行时需要将网卡名称改为实际环境中的名称。
